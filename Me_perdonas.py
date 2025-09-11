@@ -4,7 +4,7 @@ import time
 
 def main(page: ft.page):
    page.title = "¿Me perdonas?"
-   page.bgcolor=ft.colors.RED_ACCENT_100
+   page.bgcolor=ft.Colors.RED_ACCENT_100
    page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
    page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
@@ -25,7 +25,7 @@ def main(page: ft.page):
 
    def no_click(e):
         button_yes.width+=20
-        button_yes.hidth+=20
+        button_yes.heigth+=20
         page.update()
 
 
@@ -38,17 +38,17 @@ def main(page: ft.page):
        image.update()
 
        time.sleep(2)
-       reset_app():
+       reset_app()
 
    def reset_app():
 
        image.src = "triste.png"
        button_yes.width=100
-       butoon_yes.hidth=50
+       button_yes.height=50
        page.update()
 
-   button_no.no_click = no_click
-   button-yes.on_click = yes_click
+   button_no.on_click = no_click
+   button_yes.on_click = yes_click
    button_maybe.on_click = maybe_click
 
    page.add(
@@ -59,10 +59,10 @@ def main(page: ft.page):
                 ft.Row([
                     button_yes,
                     button_no,
-                    Button_maybe
+                    button_maybe
                 ],
                         alignment=ft.MainAxisAlignment.CERNTER,
-                 )
+                )
             ],
             alignment=ft.MainAxisAlignment.CERNTER,
             horizontal=ft.CrossAxisAlignment.CENTER,
