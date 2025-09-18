@@ -43,7 +43,7 @@ def main(page: ft.Page):
             max_lines=2,
             overflow="clip"
         ),
-        alignment=ft.Alignment.center,
+        alignment=ft.alignment.center,
         width=400,
         padding=5
     )
@@ -136,3 +136,4 @@ def main(page: ft.Page):
     )
 
 ft.app(target=main, view=ft.WEB_BROWSER)
+
