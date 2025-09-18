@@ -2,13 +2,12 @@ import flet as ft
 import math
 
 def main(page: ft.Page):
-    # Configuración de la ventana
     page.title = "Calculadora Simple"
     page.bgcolor = ft.Colors.BLUE_800
 
     # Titulo
     titulo = ft.Text(
-        "Calculadora Básica",
+        "alculadora Básica",
         size=28,
         color=ft.Colors.YELLOW_100,
         text_align="center",
@@ -26,7 +25,7 @@ def main(page: ft.Page):
         width=200,
         text_style=ft.TextStyle(color=ft.Colors.YELLOW_100)
     )
-    
+
     resultado = ft.Text(
         value="Resultado: ",
         color=ft.Colors.YELLOW_100,
@@ -49,7 +48,7 @@ def main(page: ft.Page):
         padding=5
     )
 
-    # Función para mostrar el resultado
+    # Función informativo mejorado
     def mostrar_resultado(valor):
         resultado.value = f"Resultado: {valor}"
         page.update()
@@ -129,6 +128,8 @@ def main(page: ft.Page):
                 ft.Row([resultado], alignment="center"),
                 ft.Row([info], alignment="center"),  # Label informativo al final y centrado
             ],
+            alignment="center",
+            horizontal_alignment="center",
             expand=True,
             spacing=15
         )
